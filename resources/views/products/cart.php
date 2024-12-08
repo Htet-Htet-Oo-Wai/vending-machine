@@ -37,7 +37,7 @@ include __DIR__ . '/../layouts/aside.php';
                                             <th>No.</th>
                                             <th>Name</th>
                                             <th>Quantity</th>
-                                            <th>Price</th>
+                                            <th>Price(USD)</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -47,7 +47,7 @@ include __DIR__ . '/../layouts/aside.php';
                                                     <td><?php echo htmlspecialchars(++$index); ?></td>
                                                     <td><?php echo htmlspecialchars($item['name']); ?></td>
                                                     <td><?php echo htmlspecialchars($item['quantity']); ?></td>
-                                                    <td><?php echo htmlspecialchars($item['price']); ?></td>
+                                                    <td>$<?php echo htmlspecialchars($item['price']); ?></td>
                                                 </tr>
                                             <?php endforeach; ?>
                                         <?php endif; ?>

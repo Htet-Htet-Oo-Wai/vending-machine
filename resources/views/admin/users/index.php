@@ -40,11 +40,13 @@ include __DIR__ . '/../../layouts/aside.php';
                                                 <td><?php echo htmlspecialchars($user['email']); ?></td>
                                                 <td><?php echo htmlspecialchars($user['role_name']); ?></td>
                                                 <td>
-                                                    <a href="/admin/users/<?php echo $user['id']; ?>/edit">Edit</a> |
+                                                    <a href="/admin/users/<?php echo $user['id']; ?>/edit">Edit</a> 
+                                                    <?php if ($_SESSION['user_id'] != $user['id']): ?>
+                                                        |
                                                     <a href="#" onclick="event.preventDefault(); if (confirm('Are you sure?')) { document.getElementById('delete-form-<?php echo $user['id']; ?>').submit(); }">Delete</a>
-
                                                     <form id="delete-form-<?php echo $user['id']; ?>" action="/admin/users/<?php echo $user['id']; ?>/delete" method="POST" style="display:none;">
                                                     </form>
+                                                    <?php endif; ?>
                                                 </td>
                                             </tr>
                                         <?php endforeach; ?>
