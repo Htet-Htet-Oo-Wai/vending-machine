@@ -17,7 +17,13 @@ class AuthController extends Controller
      */
     public function login()
     {
-        view('auth/login');
+        if (isset($_SESSION['role_name']) && $_SESSION['role_name'] == config('constants.admin_role')) {
+            header('Location: /admin/products');
+        } elseif (isset($_SESSION['role_name']) && $_SESSION['role_name'] == config('constants.user_role')) {
+            header('Location: /products');
+        } else {
+            view('auth/login');
+        }
     }
 
     /**

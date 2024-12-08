@@ -25,7 +25,7 @@ include __DIR__ . '/../../layouts/aside.php';
                                             <th>Product Name <a href="/admin/orders?sort=product_name&dir=<?php echo $orderDir === 'asc' ? 'desc' : 'asc'; ?>"><i class="fa-solid fa-sort"></i></a></th>
                                             <th>Quantity <a href="/admin/orders?sort=quantity&dir=<?php echo $orderDir === 'asc' ? 'desc' : 'asc'; ?>"><i class="fa-solid fa-sort"></i></a></th>
                                             <th>Total Price <a href="/admin/orders?sort=total_price&dir=<?php echo $orderDir === 'asc' ? 'desc' : 'asc'; ?>"><i class="fa-solid fa-sort"></i></a></th>
-                                            <th>Transaction Date <a href="/admin/orders?sort=transaction_date&dir=<?php echo $orderDir === 'asc' ? 'desc' : 'asc'; ?>"><i class="fa-solid fa-sort"></i></a></th>
+                                            <th>Transaction Date <a href="/admin/orders?sort=created_at&dir=<?php echo $orderDir === 'asc' ? 'desc' : 'asc'; ?>"><i class="fa-solid fa-sort"></i></a></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -36,7 +36,7 @@ include __DIR__ . '/../../layouts/aside.php';
                                                 <td><?php echo htmlspecialchars($order['product_name']); ?></td>
                                                 <td><?php echo htmlspecialchars($order['quantity']); ?></td>
                                                 <td><?php echo htmlspecialchars($order['total_price']); ?></td>
-                                                <td><?php echo htmlspecialchars($order['transaction_date']); ?></td>
+                                                <td><?php echo htmlspecialchars($order['created_at']); ?></td>
                                             </tr>
                                         <?php endforeach; ?>
                                     </tbody>
