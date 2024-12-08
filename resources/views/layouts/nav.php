@@ -27,7 +27,7 @@
             </div>
         </li>
         <li class="nav-item">
-            <i class="fas fa-user-circle"></i> <?php echo $_SESSION['username'] ?>
+        <?php echo $_SESSION['username']; ?> <i class="fas fa-user-circle"></i> 
         </li>
     </ul>
 </nav>

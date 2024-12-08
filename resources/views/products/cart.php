@@ -14,6 +14,21 @@ include __DIR__ . '/../layouts/aside.php';
             <div class="row">
                 <div class="col-12">
                     <div class="card">
+                        <?php if (isset($_SESSION['errors']) && count($_SESSION['errors']) > 0): ?>
+                            <div class="alert alert-danger" role="alert">
+                                <?php foreach ($_SESSION['errors'] as $err) {
+                                    echo "<div>$err</div>";
+                                }
+                                ?>
+                            </div>
+                        <?php unset($_SESSION['errors']);
+                        endif; ?>
+                        <?php if (isset($_SESSION['success'])): ?>
+                            <div class="alert alert-success" role="alert">
+                                <div><?php echo $_SESSION['success']; ?></div>
+                            </div>
+                        <?php unset($_SESSION['success']);
+                        endif; ?>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table id="branch" class="table table-bordered table-striped">

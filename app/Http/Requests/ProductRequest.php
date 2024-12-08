@@ -35,7 +35,7 @@ class ProductRequest
         } elseif (!is_numeric($this->data['price'])) {
             $this->errors['price'] = 'Please enter a valid price.';
         } elseif ($this->data['price'] <= 0) {
-            $this->errors['price'] = 'Price must be greater than 0.';
+            $this->errors['price'] = 'Price must be greater than $0.01.';
         }
 
         // Validate stock quantity
@@ -44,7 +44,7 @@ class ProductRequest
         } elseif (!is_numeric($this->data['quantity_available'])) {
             $this->errors['quantity_available'] = 'Please enter a valid stock quantity.';
         } elseif ($this->data['quantity_available'] <= 0) {
-            $this->errors['quantity_available'] = 'Stock quantity must be greater than 0.';
+            $this->errors['quantity_available'] = 'Stock quantity must be greater than or equal 1.';
         }
 
         return empty($this->errors);

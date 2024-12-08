@@ -30,14 +30,14 @@ class AddToCartRequest
         if (!isset($this->data['product_price'])) {
             $this->errors['product_price'] = 'The product price is required.';
         } elseif (!is_numeric($this->data['product_price']) || $this->data['product_price'] <= 0) {
-            $this->errors['product_price'] = 'The product price must be a positive number.';
+            $this->errors['product_price'] = 'The product price must be greater than $0.01.';
         }
 
         // Validate quantity
         if (!isset($this->data['quantity'])) {
-            $this->errors['quantity'] = 'The quantity is required.';
+            $this->errors['quantity'] = 'Please enter a quantity.';
         } elseif (!is_numeric($this->data['quantity']) || $this->data['quantity'] <= 0) {
-            $this->errors['quantity'] = 'The quantity must be a positive number.';
+            $this->errors['quantity'] = 'The quantity must be greater than or equal 1.';
         }
 
         return empty($this->errors);

@@ -11,6 +11,12 @@ include __DIR__ . '/../layouts/aside.php';
     <section class="content">
         <div class="container-fluid">
             <div>
+                <?php if (isset($_SESSION['success'])): ?>
+                    <div class="alert alert-success" role="alert">
+                        <div><?php echo $_SESSION['success']; ?></div>
+                    </div>
+                <?php unset($_SESSION['success']);
+                endif; ?>
                 <div class="card-tools mt-2 mb-3">
                     <a class="btn btn-primary mr-2" href="/cart"> Go To Cart </a>
                 </div>

@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Providers\DBConnection;
+use Exception;
 use PDO;
 
 class Product
@@ -97,8 +98,29 @@ class Product
     public static function purchase()
     {
         try {
+            $db = DBConnection::getInstance()->getPDO();
+            $db->beginTransaction();
             foreach ($_SESSION['cart'] as $item) {
-                $db = DBConnection::getInstance()->getPDO();
+                $stmt = $db->prepare("SELECT * FROM products WHERE id = :product_id FOR UPDATE");
+                $stmt->execute(['product_id' => $item['id']]);
+                $product = $stmt->fetch();
+
+                if (!$product) {
+                    $errors[] = 'Product not found.';
+                    return [
+                        'status' => false,
+                        'errors' => $errors,
+                    ];
+                }
+
+                if ($product['quantity_available'] < $item['quantity']) {
+                    $errors[] = $item['name'] . ' is insufficient stock available.';
+                    return [
+                        'status' => false,
+                        'errors' => $errors,
+                    ];
+                }
+
                 $total_price = (int)$item['quantity'] * (int)$item['price'];
                 $stmt = $db->prepare("INSERT INTO transactions (user_id, product_id, quantity, total_price) VALUES (:user_id, :product_id, :quantity, :total_price)");
                 $stmt->execute(['user_id' => $_SESSION['user_id'], 'product_id' => $item['id'], 'quantity' => $item['quantity'], 'total_price' => $total_price]);
@@ -108,8 +130,18 @@ class Product
                     'quantity' => $item['quantity'],
                 ]);
             }
-        } catch (\PDOException $e) {
-            throw new \Exception("Error fetching roles: " . $e->getMessage());
+            $db->commit();
+            return [
+                'status' => true,
+                'errors' => [],
+            ];
+        } catch (Exception $e) {
+            $db->rollBack();
+            $errors[] = $e->getMessage();
+            return [
+                'status' => false,
+                'errors' => $errors,
+            ];
         }
     }
 }

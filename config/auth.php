@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'key' => '127.0.0.1',
+    'key' => 'v$n&ing_m@chine',
 ];

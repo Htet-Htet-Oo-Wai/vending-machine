@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Utilities\Response;
 use App\Http\Requests\AddToCartRequest;
 use App\Http\Requests\ProductRequest;
 use App\Models\Product;
@@ -64,10 +65,14 @@ class ProductsController extends Controller
     public function purchase()
     {
         $this->checkRole(config('constants.user_role'));
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
-                Product::purchase();
-                header('Location: /products');
+        if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
+            $result = Product::purchase();
+            if($result['status'] == true) {
+                $_SESSION['success'] = 'Placed order successfully.';
+                Response::redirect('/products');
+            } else {
+                $_SESSION['errors'] = $result['errors'];
+                header('Location: /cart');
             }
         }
     }
@@ -91,20 +96,21 @@ class ProductsController extends Controller
     public function store()
     {
         $this->checkRole(config('constants.admin_role'));
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $request = new ProductRequest($_POST);
-            if ($request->validate()) {
-                $data = $request->sanitized();
-                $result = Product::create($data);
-                if ($result['status'] == 'success') {
-                    header('Location: /admin/products');
-                    exit();
-                }
-            } else {
-                $_SESSION['errors'] = $request->errors();
-                header('Location: /admin/products/create');
-                exit;
+        $request = new ProductRequest($_POST);
+        if ($request->validate()) {
+            $data = $request->sanitized();
+            if (php_sapi_name() === 'cli') {
+                $data['name'] = $_POST['name'] ?? null;
+                $data['price'] = $_POST['price']  ?? null;
+                $data['quantity_available'] = $_POST['quantity_available']  ?? null;
             }
+            $result = Product::create($data);
+            if ($result['status'] == 'success') {
+                $_SESSION['success'] = 'Product is Created Successfully.';
+                Response::redirect('/admin/products');
+            }
+        } else {
+            Response::withErrors($request->errors(), '/admin/products/create');
         }
     }
 
@@ -134,11 +140,10 @@ class ProductsController extends Controller
         if ($request->validate()) {
             $data = $request->sanitized();
             Product::update($id, $data['name'], $data['price'], $data['quantity']);
-            header("Location: /admin/products");
+            $_SESSION['success'] = 'Product is updated Successfully.';
+            Response::redirect('/admin/products');
         } else {
-            $_SESSION['errors'] = $request->errors();
-            header('Location: /admin/products/' . $id . '/edit');
-            exit;
+            Response::withErrors($request->errors(), '/admin/products/' . $id . '/edit');
         }
     }
 
@@ -152,8 +157,8 @@ class ProductsController extends Controller
     {
         $this->checkRole(config('constants.admin_role'));
         Product::delete($id);
-        header('Location: /admin/products');
-        exit;
+        $_SESSION['success'] = 'Product is deleted Successfully.';
+        Response::redirect('/admin/products');
     }
 
     /**
@@ -165,39 +170,37 @@ class ProductsController extends Controller
     public function addToCart($id)
     {
         $this->checkRole(config('constants.user_role'));
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            if (!isset($_SESSION['cart'])) {
-                $_SESSION['cart'] = [];
-            }
-            $productId = $id;
-            $request = new AddToCartRequest($_POST);
-            if (!$request->validate()) {
-                header("Location: /admin/products");
-            }
-            $data = $request->sanitized();
-            $productName = $data['product_name'];
-            $productPrice = $data['product_price'];
-            $quantity = $data['quantity'];
-            $productFound = false;
-
-            foreach ($_SESSION['cart'] as &$item) {
-                if ($item['id'] == $productId) {
-                    $item['quantity'] += $quantity;
-                    $productFound = true;
-                    break;
-                }
-            }
-            if (!$productFound) {
-                $_SESSION['cart'][] = [
-                    'id' => $productId,
-                    'name' => $productName,
-                    'price' => $productPrice,
-                    'quantity' => $quantity,
-                ];
-            }
-
-            header('Location: /products');
+        if (!isset($_SESSION['cart'])) {
+            $_SESSION['cart'] = [];
         }
+        $productId = $id;
+        $request = new AddToCartRequest($_POST);
+        if (!$request->validate()) {
+            Response::withErrors($request->errors(), '/admin/products');
+        }
+        $data = $request->sanitized();
+        $productName = $data['product_name'];
+        $productPrice = $data['product_price'];
+        $quantity = $data['quantity'];
+        $productFound = false;
+
+        foreach ($_SESSION['cart'] as &$item) {
+            if ($item['id'] == $productId) {
+                $item['quantity'] += $quantity;
+                $productFound = true;
+                break;
+            }
+        }
+        if (!$productFound) {
+            $_SESSION['cart'][] = [
+                'id' => $productId,
+                'name' => $productName,
+                'price' => $productPrice,
+                'quantity' => $quantity,
+            ];
+        }
+        $_SESSION['success'] = 'Add to cart successfully.';
+        Response::redirect('/products');
     }
 
     /**

@@ -38,7 +38,7 @@ class AuthController extends Controller
             $user = User::getUser($data['username']);
             if ($user && password_verify($data['password'], $user['password'])) {
                 $_SESSION['user_id'] = $user['id'];
-                $_SESSION['username'] = $user['username'];
+                $_SESSION['username'] = $user['name'];
                 $_SESSION['role_name'] = $user['role_name'];
 
                 if ($user['role_name'] === config('constants.admin_role')) {

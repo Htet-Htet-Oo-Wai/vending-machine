@@ -7,10 +7,10 @@ use PDOException;
 
 class DBConnection
 {
-    private static ?DBConnection $instance = null;
-    private PDO $pdo;
+    public static ?DBConnection $instance = null;
+    public PDO $pdo;
 
-    private function __construct()
+    public function __construct()
     {
         try {
             $dbConfig = [

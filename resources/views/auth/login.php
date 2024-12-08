@@ -16,7 +16,7 @@
             <b>Admin Dashboard</b>
         </div>
         <div class="card">
-            <?php if (isset($_SESSION['errors'])): ?>
+            <?php if (isset($_SESSION['errors']) && count($_SESSION['errors']) > 0): ?>
                 <div class="alert alert-danger" role="alert">
                     <?php foreach ($_SESSION['errors'] as $err) {
                         echo "<div>$err</div>";

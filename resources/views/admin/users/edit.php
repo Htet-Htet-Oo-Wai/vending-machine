@@ -12,7 +12,7 @@ include __DIR__ . '/../../layouts/aside.php';
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="card">
-                        <?php if (isset($_SESSION['errors'])): ?>
+                        <?php if (isset($_SESSION['errors']) && count($_SESSION['errors']) > 0): ?>
                             <div class="alert alert-danger" role="alert">
                                 <?php foreach ($_SESSION['errors'] as $err) {
                                     echo "<div>$err</div>";
