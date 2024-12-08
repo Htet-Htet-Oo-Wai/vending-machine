@@ -72,4 +72,20 @@ class AuthController extends Controller
         session_destroy();
         header('Location: /login');
     }
+
+    /**
+     * Redirect the user based on their login status and role.
+     *
+     * @return void
+     */
+    public function redirect()
+    {
+        if (isset($_SESSION['role_name']) && $_SESSION['role_name'] == config('constants.admin_role')) {
+            header('Location: /admin/products');
+        } elseif (isset($_SESSION['role_name']) && $_SESSION['role_name'] == config('constants.user_role')) {
+            header('Location: /products');
+        } else {
+            header('Location: /login');
+        }
+    }
 }

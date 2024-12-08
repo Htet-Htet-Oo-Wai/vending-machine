@@ -9,6 +9,8 @@ use App\Providers\Router;
 $router = new Router();
 
 // Product routes
+$router->get('/', [AuthController::class, 'redirect']);
+
 $router->get('login', [AuthController::class, 'login']);
 $router->post('login', [AuthController::class, 'postLogin']);
 $router->post('logout', [AuthController::class, 'logout']);
