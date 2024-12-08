@@ -32,7 +32,7 @@ include __DIR__ . '/../../layouts/aside.php';
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                         <div class="form-group">
-                                            <label class="col-form-label">Price <span class="danger">*</span></label>
+                                            <label class="col-form-label">Price(USD) <span class="danger">*</span></label>
                                             <input name="price" id="price" type="number" class="form-control" placeholder="Product Price" value="<?= $product['price'] ?>">
                                         </div>
                                     </div>

@@ -28,7 +28,7 @@ include __DIR__ . '/../../layouts/aside.php';
                                             <th>No.</th>
                                             <th>Name <a href="/admin/products?sort=name&dir=<?php echo $orderDir === 'asc' ? 'desc' : 'asc'; ?>"><i class="fa-solid fa-sort"></i></a></th>
                                             <th>Quantity Available <a href="/admin/products?sort=quantity_available&dir=<?php echo $orderDir === 'asc' ? 'desc' : 'asc'; ?>"><i class="fa-solid fa-sort"></i></a></th>
-                                            <th>Price <a href="/admin/products?sort=price&dir=<?php echo $orderDir === 'asc' ? 'desc' : 'asc'; ?>"><i class="fa-solid fa-sort"></i></a></th>
+                                            <th>Price(USD) <a href="/admin/products?sort=price&dir=<?php echo $orderDir === 'asc' ? 'desc' : 'asc'; ?>"><i class="fa-solid fa-sort"></i></a></th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -38,7 +38,7 @@ include __DIR__ . '/../../layouts/aside.php';
                                                 <td><?php echo htmlspecialchars(++$index); ?></td>
                                                 <td><?php echo htmlspecialchars($product['name']); ?></td>
                                                 <td><?php echo htmlspecialchars($product['quantity_available']); ?></td>
-                                                <td><?php echo htmlspecialchars($product['price']); ?></td>
+                                                <td>$<?php echo htmlspecialchars($product['price']); ?></td>
                                                 <td>
                                                     <a href="/admin/products/<?php echo $product['id']; ?>/edit">Edit</a> |
                                                     <a href="#" onclick="event.preventDefault(); if (confirm('Are you sure?')) { document.getElementById('delete-form-<?php echo $product['id']; ?>').submit(); }">Delete</a>

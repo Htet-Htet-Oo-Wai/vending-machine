@@ -33,8 +33,8 @@ include __DIR__ . '/../layouts/aside.php';
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>Price:</td>
-                                            <td><?php echo htmlspecialchars($product['price']); ?> USD</td>
+                                            <td>Price (USD):</td>
+                                            <td>$<?php echo htmlspecialchars($product['price']); ?> USD</td>
                                         </tr>
                                         <form method="post" action="/products/<?php echo $product['id']; ?>/addtocart">
                                             <tr>
