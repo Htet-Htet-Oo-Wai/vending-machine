@@ -1,0 +1,26 @@
+.error {
+    color: red !important;
+    font-size: small !important;
+}
+
+.product-container {
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    color: #484848;
+}
+
+[class*=sidebar-dark-] {
+    background-color: #141655;
+}
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:hover {
+    color: #fff;
+    background-color: #6868AC;
+    border-color: #6868AC;
+    box-shadow: none;
+}
