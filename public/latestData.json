@@ -1,5 +1,5 @@
 {
-    "lastUpdatedAt": "2025-10-23T08:24:57+00:00",
+    "lastUpdatedAt": "2025-10-23T08:51:19+00:00",
     "jobs": [
         {
             "id": 2,
@@ -12,9 +12,30 @@
             "maxSalary": "700.00",
             "householdType": "Test Update",
             "propertyType": "Landed",
-            "restDayPerMonthChoice": 3,
+            "restDayPerMonthChoice": "3days/month",
+            "foodPreferenceNoPork": true,
+            "foodPreferenceNoBeef": true,
+            "foodPreferenceNoOthers": "5",
             "jobRequirements": "tst",
             "priority": 1
+        },
+        {
+            "id": 1,
+            "jobId": "AJSGP00000001",
+            "date": "October 22, 2025",
+            "typeofhelper": "Indonesia",
+            "employerName": "",
+            "salary": "600.00",
+            "minSalary": "500.00",
+            "maxSalary": "600.00",
+            "householdType": "Test2",
+            "propertyType": "Landed",
+            "restDayPerMonthChoice": "1day/month",
+            "foodPreferenceNoPork": true,
+            "foodPreferenceNoBeef": false,
+            "foodPreferenceNoOthers": "test",
+            "jobRequirements": "test",
+            "priority": 2
         }
     ]
 }
