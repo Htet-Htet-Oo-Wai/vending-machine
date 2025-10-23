@@ -1,23 +1,15 @@
-[
-    {
-        "job_id": 2,
-        "household_type": "Test Update",
-        "household_type_image_s3_filepath": "dh/jobs/household_type/J3pDOY_20251022090835434733.jpg",
-        "property_type": "Landed",
-        "rest_day_per_month_choice": 3,
-        "food_preference_no_pork": true,
-        "food_preference_no_beef": true,
-        "food_preference_no_others": "5",
-        "job_description": "tst",
-        "phc_pay_min_SGD": 70000,
-        "phc_pay_max_SGD": 70000,
-        "job_source": "SM ADS VENDOR NBT",
-        "job_source_note": "Test",
-        "job_creation_datetime": "2025-10-22T09:08:35.000000Z",
-        "job_update_datetime": "2025-10-22T09:08:35.000000Z",
-        "job_expiration_datetime": "2025-11-21T00:00:00.000000Z",
-        "job_status": "OPEN",
-        "job_case_manager_id": "5",
-        "employer_nationality": "Singapore"
-    }
-]
+{
+    "lastUpdatedAt": "2025-10-23T08:10:50+00:00",
+    "items": [
+        {
+            "id": 2,
+            "jobId": "AJSGP00000002",
+            "date": "October 22, 2025",
+            "typeofhelper": "Indonesia, Myanmar, Philippines",
+            "employerName": "",
+            "salary": true,
+            "jobRequirements": "tst",
+            "priority": 1
+        }
+    ]
+}
