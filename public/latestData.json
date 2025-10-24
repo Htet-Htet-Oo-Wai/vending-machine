@@ -1,24 +1,6 @@
 {
-    "lastUpdatedAt": "2025-10-23T14:44:03.848659Z",
+    "lastUpdatedAt": "2025-10-24T07:02:23.463068Z",
     "jobs": [
-        {
-            "id": 7,
-            "jobId": "AJSGP00000007",
-            "date": "October 23, 2025",
-            "typeofhelper": "Indonesia",
-            "employerName": "",
-            "salary": "700.00",
-            "minSalary": "700.00",
-            "maxSalary": "700.00",
-            "householdType": "Test 3",
-            "propertyType": "Condo/Apartment",
-            "restDayPerMonthChoice": "8days/month",
-            "foodPreferenceNoPork": false,
-            "foodPreferenceNoBeef": false,
-            "foodPreferenceNoOthers": "FOod Prederence Update",
-            "jobRequirements": "Test",
-            "priority": 1
-        },
         {
             "id": 6,
             "jobId": "AJSGP00000006",
@@ -35,7 +17,7 @@
             "foodPreferenceNoBeef": false,
             "foodPreferenceNoOthers": "Test",
             "jobRequirements": "Must have experience caring for young children, preferably toddlers or preschool-aged.\r\n\r\nBe patient, caring, and energetic, able to handle two active 4-year-olds at the same time.\r\n\r\nResponsible for daily care routines, including bathing, feeding, dressing, and supervising playtime.\r\n\r\nAble to create a safe and nurturing environment for both children.\r\n\r\nEngage children in educational and creative activities (reading, drawing, singing, storytelling, learning games, etc.).",
-            "priority": 2
+            "priority": 1
         },
         {
             "id": 5,
@@ -43,9 +25,9 @@
             "date": "October 18, 2025",
             "typeofhelper": "Indonesia, Myanmar, Philippines",
             "employerName": "",
-            "salary": "797.00",
-            "minSalary": "600.00",
-            "maxSalary": "797.00",
+            "salary": "10,000.00",
+            "minSalary": "10,000.00",
+            "maxSalary": "10,000.00",
             "householdType": "Family of 5, 1 old couple, 1 young couple and baby",
             "propertyType": "Condo/Apartment",
             "restDayPerMonthChoice": "4days/month",
@@ -53,7 +35,7 @@
             "foodPreferenceNoBeef": false,
             "foodPreferenceNoOthers": null,
             "jobRequirements": "Looking for a helper to take care of an elderly couple. Main duties include assisting them with daily routines, preparing meals, keeping their area clean, and ensuring their comfort and safety. Must be kind, patient, and responsible. No need to take care of the baby, as we already have another helper for that. Basic cooking and general housework are required. Experience in elderly care is preferred.",
-            "priority": 3
+            "priority": 2
         },
         {
             "id": 4,
@@ -71,7 +53,7 @@
             "foodPreferenceNoBeef": false,
             "foodPreferenceNoOthers": "No seafood",
             "jobRequirements": "Looking for Myn, taking care of children & housework",
-            "priority": 4
+            "priority": 3
         },
         {
             "id": 3,
@@ -89,43 +71,7 @@
             "foodPreferenceNoBeef": false,
             "foodPreferenceNoOthers": null,
             "jobRequirements": "Looking for a Filipino helper who is skilled in baking, cooking, and general housework. The ideal candidate should be responsible, organized, and passionate about preparing delicious meals and baked goods. Duties include daily cleaning, laundry, and maintaining a tidy home, as well as cooking and trying new recipes. Must be independent, honest, and willing to learn. Prior experience in housekeeping and cooking is preferred.",
-            "priority": 5
-        },
-        {
-            "id": 2,
-            "jobId": "AJSGP00000002",
-            "date": "October 22, 2025",
-            "typeofhelper": "Indonesia, Myanmar, Philippines",
-            "employerName": "",
-            "salary": "700.00",
-            "minSalary": "700.00",
-            "maxSalary": "700.00",
-            "householdType": "Test Update",
-            "propertyType": "UNKNOWN",
-            "restDayPerMonthChoice": "3days/month",
-            "foodPreferenceNoPork": true,
-            "foodPreferenceNoBeef": true,
-            "foodPreferenceNoOthers": "5",
-            "jobRequirements": "tst",
-            "priority": 6
-        },
-        {
-            "id": 1,
-            "jobId": "AJSGP00000001",
-            "date": "October 20, 2025",
-            "typeofhelper": "Indonesia",
-            "employerName": "",
-            "salary": "600.00",
-            "minSalary": "500.00",
-            "maxSalary": "600.00",
-            "householdType": "Test2",
-            "propertyType": "Landed",
-            "restDayPerMonthChoice": "1day/month",
-            "foodPreferenceNoPork": true,
-            "foodPreferenceNoBeef": false,
-            "foodPreferenceNoOthers": "test",
-            "jobRequirements": "test",
-            "priority": 7
+            "priority": 4
         }
     ]
 }
