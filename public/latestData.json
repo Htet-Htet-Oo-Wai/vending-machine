@@ -1,9 +1,9 @@
 {
-    "lastUpdatedAt": "2025-10-24T08:16:11.057434Z",
+    "lastUpdatedAt": "2025-10-24T15:47:23.296560Z",
     "jobs": [
         {
             "id": 12,
-            "jobId": "AJSGP00000012",
+            "jobId": "JD0000012",
             "date": "October 24, 2025",
             "typeofhelper": "Myanmar",
             "employerName": "",
@@ -21,13 +21,13 @@
         },
         {
             "id": 9,
-            "jobId": "AJSGP00000009",
+            "jobId": "JD0000009",
             "date": "October 24, 2025",
             "typeofhelper": "Indonesia, Myanmar",
             "employerName": "",
-            "salary": "900.00",
-            "minSalary": "700.00",
-            "maxSalary": "900.00",
+            "salary": "10,000.00",
+            "minSalary": "10,000.00",
+            "maxSalary": "10,000.00",
             "householdType": "Family of 3, 1 old couple, 1 young couple and baby",
             "propertyType": "Landed",
             "restDayPerMonthChoice": "8days/month",
@@ -39,7 +39,7 @@
         },
         {
             "id": 8,
-            "jobId": "AJSGP00000008",
+            "jobId": "JD0000008",
             "date": "October 23, 2025",
             "typeofhelper": "Philippines",
             "employerName": "",
