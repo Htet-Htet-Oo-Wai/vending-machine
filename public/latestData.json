@@ -1,6 +1,42 @@
 {
-    "lastUpdatedAt": "2025-10-24T15:48:48.107368Z",
+    "lastUpdatedAt": "2025-10-26T04:18:11.675379Z",
     "jobs": [
+        {
+            "id": 16,
+            "jobId": "JD0000016",
+            "date": "October 26, 2025",
+            "typeofhelper": "Myanmar",
+            "employerName": "",
+            "salary": "497.00",
+            "minSalary": "497.00",
+            "maxSalary": "497.00",
+            "householdType": "a",
+            "propertyType": "Condo/Apartment",
+            "restDayPerMonthChoice": "No Rest Days",
+            "foodPreferenceNoPork": false,
+            "foodPreferenceNoBeef": false,
+            "foodPreferenceNoOthers": null,
+            "jobRequirements": "aa",
+            "priority": 1
+        },
+        {
+            "id": 15,
+            "jobId": "JD0000015",
+            "date": "October 25, 2025",
+            "typeofhelper": "Philippines",
+            "employerName": "",
+            "salary": "188.00",
+            "minSalary": "188.00",
+            "maxSalary": "188.00",
+            "householdType": "Family of 5, 1 old couple, 1 young couple and baby",
+            "propertyType": "UNKNOWN",
+            "restDayPerMonthChoice": "No Rest Days",
+            "foodPreferenceNoPork": true,
+            "foodPreferenceNoBeef": false,
+            "foodPreferenceNoOthers": "Food Prederence",
+            "jobRequirements": "Tes",
+            "priority": 2
+        },
         {
             "id": 13,
             "jobId": "JD0000013",
@@ -12,12 +48,12 @@
             "maxSalary": "10,000.00",
             "householdType": "Family of 5, 1 old couple, 1 young couple and baby",
             "propertyType": "Landed",
-            "restDayPerMonthChoice": "4days/month",
+            "restDayPerMonthChoice": "No Rest Days",
             "foodPreferenceNoPork": true,
             "foodPreferenceNoBeef": false,
             "foodPreferenceNoOthers": null,
             "jobRequirements": "Test",
-            "priority": 1
+            "priority": 3
         },
         {
             "id": 12,
@@ -30,12 +66,30 @@
             "maxSalary": "600.00",
             "householdType": "Family of 5, 1 old couple, 1 young couple and baby",
             "propertyType": "Condo/Apartment",
-            "restDayPerMonthChoice": "3days/month",
+            "restDayPerMonthChoice": "No Rest Days",
             "foodPreferenceNoPork": false,
             "foodPreferenceNoBeef": false,
             "foodPreferenceNoOthers": "Food Prederence",
             "jobRequirements": "Test",
-            "priority": 2
+            "priority": 4
+        },
+        {
+            "id": 11,
+            "jobId": "JD0000011",
+            "date": "October 24, 2025",
+            "typeofhelper": "Indonesia",
+            "employerName": "",
+            "salary": "500.00",
+            "minSalary": "500.00",
+            "maxSalary": "500.00",
+            "householdType": "Family of 5, 1 old couple, 1 young couple and baby",
+            "propertyType": "Condo/Apartment",
+            "restDayPerMonthChoice": "3 days / month",
+            "foodPreferenceNoPork": true,
+            "foodPreferenceNoBeef": false,
+            "foodPreferenceNoOthers": null,
+            "jobRequirements": "Teset",
+            "priority": 5
         },
         {
             "id": 9,
@@ -48,12 +102,12 @@
             "maxSalary": "10,000.00",
             "householdType": "Family of 3, 1 old couple, 1 young couple and baby",
             "propertyType": "Landed",
-            "restDayPerMonthChoice": "8days/month",
+            "restDayPerMonthChoice": "8 days / month",
             "foodPreferenceNoPork": true,
             "foodPreferenceNoBeef": true,
             "foodPreferenceNoOthers": null,
             "jobRequirements": "Indian family of 4 (3 and 1 yo):\r\n• Vegetarian cooking\r\n• Child care\r\n• Good english\r\n• Must have reference letter\r\n• 2-4 days off\r\n• Private room\r\n• Performance bonus\r\n• $700-$950\r\n• Any Nationality",
-            "priority": 3
+            "priority": 6
         },
         {
             "id": 8,
@@ -66,12 +120,12 @@
             "maxSalary": "500.00",
             "householdType": "Family of 5, 1 old couple, 1 young couple and baby",
             "propertyType": "Condo/Apartment",
-            "restDayPerMonthChoice": "2days/month",
+            "restDayPerMonthChoice": "No Rest Days",
             "foodPreferenceNoPork": true,
             "foodPreferenceNoBeef": false,
             "foodPreferenceNoOthers": "Food Prederence",
             "jobRequirements": "Indonesian only need exsg or Taiwan, can speak Chinese (canto or hokkien also can)\r\n• Not urgent & flexible looking for suitable\r\n• Landed 2storey 5room 4toilet\r\n• currently have 2 helper already.\r\n• Chinese Buddha Buddhist\r\n\r\n• Mostly need to touch pork and chicken duck fish etc\r\n• helper unable to pray at home but able to fast before Hari Raya\r\n\r\n• offday during hari raya too depend on the helper if they want to go out or not but offday will be on Saturday or sunday\r\n• 12 pax living in the house,\r\n• 10 adults + 2 helpers\r\n• 1 baby ( but my cousin has a helper to take care baby sometimes need help to see if helper need help)\r\n\r\n• 1 car mostly both helper wash together\r\n• not everyday wash car\r\n• wash car only sometimes or once in awhile\r\n• Ok to give 1 Sunday off a month (1 Off) 10-6pm\r\n• Housework must be finish before helper go for offday\r\n\r\n• Afterwork can use phone\r\n• Housework, Childcare/ Babycare, Cooking, Take care baby if only need help\r\n• Helper shares room with Employer's Sister\r\n• Everyday have to cook only dinner for 14ppl. Sometime more ppl but there's will have helper to help. When there's have party need to cook a lot, lunch and helper can cook their own food lunch sometimes we will buy lunch for helper\r\n• Morning & night shower if helper finish work early at night *pls shower *early. Currently second helper shower late having headache.",
-            "priority": 4
+            "priority": 7
         }
     ]
 }
