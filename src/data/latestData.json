@@ -1,0 +1,49 @@
+{
+    "lastUpdatedAt": "2025-10-27T14:03:36.957792Z",
+    "jobs": [
+        {
+            "id": 33,
+            "jobId": "JD0000033",
+            "date": "October 27, 2025",
+            "typeofhelper": "Indonesia",
+            "employerName": "",
+            "salary": "780.00",
+            "minSalary": "780.00",
+            "maxSalary": "780.00",
+            "householdType": "Family of 5, 1 old couple, 1 young couple and baby",
+            "employerNationality": "Singapore",
+            "originalHouseholdTypeImage": "YNo2qi_20251027140102756997.jpg",
+            "householdTypeImage": "http://192.168.1.36:4100/phluid/dh/jobs/household_type/YNo2qi_20251027140102756997.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20251027%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251027T140336Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=d0bbd0e26244af415b349aefb2ef71cea2c1885261a19fb59b39d1a8a05b911a",
+            "propertyType": "Condo/Apartment",
+            "restDayPerMonthChoice": "8days/month",
+            "foodPreferenceNoPork": true,
+            "foodPreferenceNoBeef": false,
+            "foodPreferenceNoOthers": null,
+            "expirationDate": "2025-12-26",
+            "jobRequirements": "Test",
+            "priority": 1
+        },
+        {
+            "id": 32,
+            "jobId": "JD0000032",
+            "date": "October 27, 2025",
+            "typeofhelper": "Indonesia",
+            "employerName": "",
+            "salary": "597.00",
+            "minSalary": "597.00",
+            "maxSalary": "597.00",
+            "householdType": "Family of 5, 1 old couple, 1 young couple and baby",
+            "employerNationality": "Singapore",
+            "originalHouseholdTypeImage": "ncZRbG_20251027135230117864.jpg",
+            "householdTypeImage": "http://192.168.1.36:4100/phluid/dh/jobs/household_type/ncZRbG_20251027135230117864.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20251027%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251027T140336Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=1d57e1646aa78840a783dd1606d2aae34e0d1036d3098d677ba1d3b3b95c568a",
+            "propertyType": "Condo/Apartment",
+            "restDayPerMonthChoice": "4days/month",
+            "foodPreferenceNoPork": false,
+            "foodPreferenceNoBeef": false,
+            "foodPreferenceNoOthers": null,
+            "expirationDate": "2025-11-26",
+            "jobRequirements": "Test",
+            "priority": 2
+        }
+    ]
+}
