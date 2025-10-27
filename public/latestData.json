@@ -1,41 +1,4 @@
 {
-    "lastUpdatedAt": "2025-10-26T13:33:39.502542Z",
-    "jobs": [
-        {
-            "id": 3,
-            "jobId": "JD0000003",
-            "date": "October 26, 2025",
-            "typeofhelper": "Indonesia",
-            "employerName": "",
-            "salary": "600.00",
-            "minSalary": "600.00",
-            "maxSalary": "600.00",
-            "householdType": "Test Update",
-            "propertyType": "HDB",
-            "restDayPerMonthChoice": "No Rest Days",
-            "foodPreferenceNoPork": true,
-            "foodPreferenceNoBeef": false,
-            "foodPreferenceNoOthers": "Food Prederence",
-            "jobRequirements": "Test",
-            "priority": 1
-        },
-        {
-            "id": 2,
-            "jobId": "JD0000002",
-            "date": "October 26, 2025",
-            "typeofhelper": "Philippines",
-            "employerName": "",
-            "salary": "800.00",
-            "minSalary": "800.00",
-            "maxSalary": "800.00",
-            "householdType": "Family of 5, 1 old couple, 1 young couple and baby",
-            "propertyType": "Landed",
-            "restDayPerMonthChoice": "3days/month",
-            "foodPreferenceNoPork": true,
-            "foodPreferenceNoBeef": false,
-            "foodPreferenceNoOthers": "Food Prederence",
-            "jobRequirements": "Test",
-            "priority": 2
-        }
-    ]
+    "lastUpdatedAt": "2025-10-27T09:10:33.425405Z",
+    "jobs": []
 }
