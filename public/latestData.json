@@ -1,4 +1,25 @@
 {
-    "lastUpdatedAt": "2025-10-27T09:10:33.425405Z",
-    "jobs": []
+    "lastUpdatedAt": "2025-10-27T09:12:15.399800Z",
+    "jobs": [
+        {
+            "id": 2,
+            "jobId": "JD0000002",
+            "date": "October 26, 2025",
+            "typeofhelper": "Philippines",
+            "employerName": "",
+            "salary": "800.00",
+            "minSalary": "800.00",
+            "maxSalary": "800.00",
+            "householdType": "Family of 5, 1 old couple, 1 young couple and baby",
+            "employer_nationality": "Singapore",
+            "householdTypeImage": "http://192.168.1.36:4100/phluid/dh/jobs/household_type/qXrBts_20251026132038119494.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20251027%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251027T091214Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=be29394c1ef56e43fb0617eff60f13d6d0c5cd033701ec75367afe1121791812",
+            "propertyType": "Landed",
+            "restDayPerMonthChoice": "3days/month",
+            "foodPreferenceNoPork": true,
+            "foodPreferenceNoBeef": false,
+            "foodPreferenceNoOthers": "Food Prederence",
+            "jobRequirements": "Test",
+            "priority": 1
+        }
+    ]
 }
