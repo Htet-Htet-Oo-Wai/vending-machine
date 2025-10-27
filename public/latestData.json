@@ -1,5 +1,5 @@
 {
-    "lastUpdatedAt": "2025-10-27T09:16:23.618834Z",
+    "lastUpdatedAt": "2025-10-27T09:17:42.842204Z",
     "jobs": [
         {
             "id": 2,
@@ -12,7 +12,7 @@
             "maxSalary": "800.00",
             "householdType": "Family of 5, 1 old couple, 1 young couple and baby",
             "employer_nationality": "Singapore",
-            "householdTypeImage": "http://192.168.1.36:4100/phluid/dh/jobs/household_type/qXrBts_20251026132038119494.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20251027%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251027T091617Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=19a1f024175b5b50d5a3448ab15ec9d7cfcab6c270fce3fa9ad3f4dd35cc5f0d",
+            "householdTypeImage": "http://192.168.1.36:4100/phluid/dh/jobs/household_type/qXrBts_20251026132038119494.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20251027%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251027T091737Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Signature=8a818b7351268183c9057594397c4d5061b51f3e7888a19f09b59e16e302ecf2",
             "propertyType": "Landed",
             "restDayPerMonthChoice": "3days/month",
             "foodPreferenceNoPork": true,
